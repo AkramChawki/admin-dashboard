@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*:focus {
+    outline: none;
+}
+.menu_item_border {
+    position: relative;
+}
+.menu_item_border::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translatey(-50%);
+    height: 60%;
+    width: 5px;
+    background-color: black;
+}
